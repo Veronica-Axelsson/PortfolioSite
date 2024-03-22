@@ -1,0 +1,219 @@
+//   Menu 1
+header {
+    
+    .topbar {
+
+        .container {
+            background-color: $BGDark;
+            color: white;    
+            margin-top: 0.4rem;
+            margin-bottom: 0.4rem;      
+        }
+    }
+
+
+    .topmenu {
+        background: rgb(134,5,143);
+        // background: linear-gradient(90deg, rgba(134,5,143,1) 0%, rgba(53,14,60,1) 35%, rgba(22,24,39,1) 100%);
+        font-size: 2rem;
+
+        // background: rgb(53,14,60);
+        // background: linear-gradient(270deg, rgba(53,14,60,0.8463760504201681) 0%, rgba(53,14,60,0.8995973389355743) 49%, rgba(250,56,228,1) 100%);
+        
+       
+    
+    .container {
+            display: none;
+            justify-content: space-between;
+            text-decoration: none;
+            align-items: center;
+
+            @include lg {
+                display: flex;
+            }
+
+            h1 {
+                color: white;     
+            }
+    
+            ul {
+                display: none;
+      
+                .line {
+                    color: white;               
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 0 2rem;
+                }
+    
+                @include lg {
+                    display: flex;
+                }              
+            }
+        }
+    }
+}
+
+//   Menu 2
+header {
+    .topbar {
+
+        .container {
+            background-color: $BGDark;
+            color: white;    
+            margin-top: 0.4rem;
+            margin-bottom: 0.4rem; 
+            max-width: 90%;     
+        }
+    }
+
+    .topmenu2 {
+        background: rgb(134,5,143);
+        background: linear-gradient(90deg, rgba(134,5,143,1) 0%, rgba(53,14,60,1) 35%, rgba(22,24,39,1) 100%);
+        font-size: 2rem;
+    
+    .container {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            align-items: center;
+            max-width: 90%;
+
+            @include lg {
+                display: none;
+             
+            }
+
+            h1 {
+                color: white;     
+            }
+    
+            ul {
+                display: flex;
+      
+                // .line {
+                //     color: white;               
+                // }
+    
+                // a {
+                //     text-decoration: none;
+                //     color: white;
+                //     padding: 0 2rem;
+                // }
+    
+                // @include lg {
+                //     display: flex;
+                // }
+                
+                .moveMenu {
+                    display: flex;
+                    justify-content: end;
+                
+                    .mobile-menu {                     
+                        color: #fff;              
+                        max-width: 55%;
+                        position: fixed;                    
+                        z-index: 1000;
+                        top: 30px; /* Make the menu stick to the top */
+                        
+                        
+                
+                        input {
+                            display: none;
+                            
+                        }
+                        
+                        label {
+                            display: flex;
+                            justify-content: end;
+                        
+                
+                            .menu-icon {
+                                cursor: pointer;
+                            }
+                            
+                        }
+                
+                        .menu-items {
+                            /* Hide the menu items by default */
+                            display: none;
+                            list-style-type: none;
+                            padding-right: 2rem;
+                            
+                            background: rgb(22,24,39);
+                            background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+                            border: 3px solid $pinkPunk;
+                            border-radius: 8px;
+
+                
+                
+                            li {
+                                display: block;
+                                padding: 10px 0;
+                
+                                a {
+                                    color: #fff;
+                                    text-decoration: none;
+                
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                /* Show menu items when checkbox is checked */
+                #menu-toggle:checked + .menu-icon + .menu-items {
+                    display: block;
+                }
+                
+            }
+        }
+    }
+}
+
+//   Back to top of site
+
+.toTheTop {     
+        font-size: 2rem;
+        
+    .container {
+
+        ul {
+            display: flex;
+       
+            .moveMenu {
+                display: flex;
+                justify-content: end;
+            
+                .mobile-menu {                     
+                    color: white;  
+                    text-decoration: none;            
+                    width: 20%;
+                    position: fixed;                    
+                    z-index: 1000;
+                    bottom: 30px; /* Make the menu stick to the top */
+                    right: 30px;
+                    
+                    label {
+                        display: flex;
+                        justify-content: end;
+
+                        a {
+                            color: white;
+                        }
+                                    
+                        .menu-icon {
+                            cursor: pointer;
+                        }                          
+                    }
+                }
+            } 
+        }
+    }
+}

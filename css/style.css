@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.cyberBtn {
+  color: white;
+  text-decoration: none;
+  font-size: 24;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  margin: 0;
+  height: 54px;
+  width: auto;
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+  border: 3px solid #FA38E4;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+}
+.cyberBtn:hover {
+  border: 3px solid white;
+  background: #161827;
+  color: white;
+}
+
+.socialBtn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+.socialBtn .socialImg {
+  display: block;
+  margin-left: 1rem;
+  margin-right: auto;
+  width: 60px;
+}
+
+.socialBtnHover:hover {
+  background: #161827;
+  color: white;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  background-color: #161827;
+}
+
+.bgBoxes {
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+}
+@media (min-width: 992px) {
+  .bgBoxes {
+    border: 3px solid #FA38E4;
+    border-radius: 8px;
+  }
+}
+
+.borderTop {
+  border-top: 3px solid #FA38E4;
+}
+
+.h2title {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.h3title {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .h3title {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.h4title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .h4title {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.cyberBtn {
+  color: white;
+  text-decoration: none;
+  font-size: 24;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  margin: 0;
+  height: 54px;
+  width: auto;
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+  border: 3px solid #FA38E4;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+}
+.cyberBtn:hover {
+  border: 3px solid white;
+  background: #161827;
+  color: white;
+}
+
+.socialBtn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+.socialBtn .socialImg {
+  display: block;
+  margin-left: 1rem;
+  margin-right: auto;
+  width: 60px;
+}
+
+.socialBtnHover:hover {
+  background: #161827;
+  color: white;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+header .topbar .container {
+  background-color: #161827;
+  color: white;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+header .topmenu {
+  background: rgb(134, 5, 143);
+  font-size: 2rem;
+}
+header .topmenu .container {
+  display: none;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  header .topmenu .container {
+    display: flex;
+  }
+}
+header .topmenu .container h1 {
+  color: white;
+}
+header .topmenu .container ul {
+  display: none;
+}
+header .topmenu .container ul .line {
+  color: white;
+}
+header .topmenu .container ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2rem;
+}
+@media (min-width: 992px) {
+  header .topmenu .container ul {
+    display: flex;
+  }
+}
+
+header .topbar .container {
+  background-color: #161827;
+  color: white;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  max-width: 90%;
+}
+header .topmenu2 {
+  background: rgb(134, 5, 143);
+  background: linear-gradient(90deg, rgb(134, 5, 143) 0%, rgb(53, 14, 60) 35%, rgb(22, 24, 39) 100%);
+  font-size: 2rem;
+}
+header .topmenu2 .container {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  max-width: 90%;
+}
+@media (min-width: 992px) {
+  header .topmenu2 .container {
+    display: none;
+  }
+}
+header .topmenu2 .container h1 {
+  color: white;
+}
+header .topmenu2 .container ul {
+  display: flex;
+  /* Show menu items when checkbox is checked */
+}
+header .topmenu2 .container ul .moveMenu {
+  display: flex;
+  justify-content: end;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu {
+  color: #fff;
+  max-width: 55%;
+  position: fixed;
+  z-index: 1000;
+  top: 30px; /* Make the menu stick to the top */
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu input {
+  display: none;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu label {
+  display: flex;
+  justify-content: end;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu label .menu-icon {
+  cursor: pointer;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items {
+  /* Hide the menu items by default */
+  display: none;
+  list-style-type: none;
+  padding-right: 2rem;
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+  border: 3px solid #FA38E4;
+  border-radius: 8px;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li {
+  display: block;
+  padding: 10px 0;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li a:hover {
+  text-decoration: underline;
+}
+header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
+  display: block;
+}
+
+.toTheTop {
+  font-size: 2rem;
+}
+.toTheTop .container ul {
+  display: flex;
+}
+.toTheTop .container ul .moveMenu {
+  display: flex;
+  justify-content: end;
+}
+.toTheTop .container ul .moveMenu .mobile-menu {
+  color: white;
+  text-decoration: none;
+  width: 20%;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px; /* Make the menu stick to the top */
+  right: 30px;
+}
+.toTheTop .container ul .moveMenu .mobile-menu label {
+  display: flex;
+  justify-content: end;
+}
+.toTheTop .container ul .moveMenu .mobile-menu label a {
+  color: white;
+}
+.toTheTop .container ul .moveMenu .mobile-menu label .menu-icon {
+  cursor: pointer;
+}
+
+.hero1 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .hero1 {
+    display: contents;
+  }
+}
+.hero1 .herocontainer {
+  position: relative;
+}
+.hero1 img {
+  background-size: cover;
+}
+.hero1 .bottomleft {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 18px;
+  padding: 2.5rem;
+}
+.hero1 .bottomleft .hello {
+  color: white;
+  padding-top: 2rem;
+  font-size: 32px;
+}
+.hero1 .bottomleft .textAnimation {
+  color: #FA38E4;
+  font-size: 48px;
+  font-weight: 700;
+  padding-right: 4rem;
+}
+.hero1 .bottomleft p {
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.hero1 .bottomleft .heroButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.hero1 img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .hero2 {
+    display: none;
+  }
+}
+.hero2 img {
+  max-width: 100%;
+}
+.hero2 .bottomleft {
+  bottom: 3rem;
+  font-size: 18px;
+  padding: 2.5rem;
+  margin-top: 1rem;
+  border: 3px solid #FA38E4;
+  border-radius: 8px;
+}
+.hero2 .bottomleft .hello {
+  color: white;
+  padding-top: 2rem;
+  font-size: 18px;
+}
+.hero2 .bottomleft .textAnimation {
+  color: #FA38E4;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 4rem;
+}
+.hero2 .bottomleft p {
+  color: white;
+  padding-top: 0.5rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+.hero2 .bottomleft .heroButtons {
+  display: block;
+  padding-top: 3rem;
+}
+.hero2 .bottomleft .heroButtons .socialBtn {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.nav-link.active {
+  color: #FA38E4; /* Change the color to red */
+}
+
+.navtabDesign {
+  font-size: 20px;
+  color: white;
+  padding-top: 0.5rem;
+}
+.navtabDesign p {
+  padding: 0.5rem 0.5rem;
+  font-size: 20px;
+}
+.navtabDesign li {
+  color: white;
+}
+.navtabDesign li a {
+  color: white;
+}
+.navtabDesign li a:hover {
+  color: #FF7373;
+  text-decoration: underline;
+}
+
+.gallery {
+  background-color: #161827;
+  padding-bottom: 4rem;
+}
+.gallery .gallerymenu {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+.gallery .gallerymenu p {
+  padding: 0 0.5rem;
+}
+.gallery .galleryCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .gallery .galleryCard {
+    gap: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .gallery .galleryCard {
+    gap: 50px;
+  }
+}
+.gallery .galleryCard *,
+.gallery .galleryCard *:before,
+.gallery .galleryCard *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+.gallery .galleryCard html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-smooth: auto;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #444;
+}
+.gallery .galleryCard body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.gallery .galleryCard figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  min-width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.gallery .galleryCard figure:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.gallery .galleryCard figure:hover h1 {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.gallery .galleryCard figure:hover img {
+  transform: scale(1.25);
+}
+.gallery .galleryCard figure:hover figcaption {
+  bottom: 0;
+}
+.gallery .galleryCard figure h1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.25s ease;
+  z-index: 999;
+  background-color: black;
+  padding: 0.5rem 1rem;
+}
+.gallery .galleryCard figure img {
+  height: 100%;
+  width: auto;
+  transition: 0.25s;
+}
+.gallery .galleryCard figure figcaption {
+  position: absolute;
+  bottom: -140%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+.gallery .galleryCard figure figcaption h3 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.gallery .galleryCard figure figcaption p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.gallery .galleryCard figure figcaption button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0;
+  padding: 10px 30px;
+  background-color: #FF7373;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.gallery .galleryCard figure figcaption button i {
+  color: black;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.gallery .galleryCard figure figcaption button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.about {
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 26%, rgb(110, 20, 181) 100%);
+  color: white;
+}
+@media (min-width: 992px) {
+  .about .arrange {
+    display: flex;
+    margin-top: 2rem;
+    gap: 6rem;
+  }
+}
+.about .arrange .left {
+  max-width: auto;
+}
+@media (min-width: 992px) {
+  .about .arrange .left {
+    max-width: 45%;
+  }
+}
+.about .arrange .left .helloBox {
+  padding: 0 2.5rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .about .arrange .left .helloBox {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    margin-bottom: 3rem;
+    background: rgb(22, 24, 39);
+    background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+    border: 3px solid #FA38E4;
+    border-radius: 8px;
+  }
+}
+.about .arrange .left .missionBox {
+  padding: 0 2.5rem 0.5rem 2.5rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .about .arrange .left .missionBox {
+    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    background: rgb(22, 24, 39);
+    background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+    border: 3px solid #FA38E4;
+    border-radius: 8px;
+  }
+}
+.about .arrange .right {
+  max-width: auto;
+  margin-bottom: 4rem;
+}
+.about .arrange .right .skillsBox {
+  padding-bottom: 3rem;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .about .arrange .right .skillsBox {
+    background: rgb(22, 24, 39);
+    background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+    border: 3px solid #FA38E4;
+    border-radius: 8px;
+  }
+}
+.about .arrange .right .skillsBox .move {
+  text-align: center;
+  padding: 0 2.5rem 0.5rem 2.5rem;
+}
+@media (min-width: 992px) {
+  .about .arrange .right .skillsBox .move {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+.about .arrange .right .skillsBox .icon {
+  padding: 0.5rem;
+}
+.about .downloadsBox {
+  padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .about .downloadsBox {
+    margin-top: 3rem;
+    background: rgb(22, 24, 39);
+    background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+    border: 3px solid #FA38E4;
+    border-radius: 8px;
+  }
+}
+.about .downloadsBox .moveDownloads {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.about .downloadsBox .moveDownloads .btnMove {
+  margin: 0.5rem;
+}
+
+.contact {
+  color: white;
+  margin-bottom: 10rem;
+}
+
+footer {
+  color: white;
+}

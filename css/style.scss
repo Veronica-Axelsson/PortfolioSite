@@ -1,0 +1,16 @@
+// Core
+@import './core/base';
+@import './core/fonts';
+@import './core/colors';
+@import './core/buttons';
+@import './core/mixins';
+@import './core/stickymenu';
+@import './core/mobileMenu';
+
+// Sections
+@import './sections/topmenu';
+@import './sections/hero';
+@import './sections/gallery';
+@import './sections/about';
+@import './sections/contact';
+@import './sections/footer';

@@ -1,0 +1,68 @@
+
+@import './fonts';
+@import './colors';
+@import './buttons';
+@import './mixins';
+
+body {
+    box-sizing: border-box;
+    font-family: $font-Roboto;
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    color: black;
+    background-color: $BGDark;
+    
+}
+
+.bgBoxes {
+    background: rgb(22,24,39);
+    background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+
+    @include lg {
+        border: 3px solid $pinkPunk;
+        border-radius: 8px;
+    }
+}
+
+.borderTop {
+   
+    border-top: 3px solid $pinkPunk;
+}
+
+.h2title {
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.h3title {
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    color: white;
+    text-align: center;
+    // padding-top: 3rem;
+    // padding-bottom: 1rem;
+
+    @include lg {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.h4title {
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    color: white;
+    text-align: center;
+    // padding-top: 3rem;
+    // padding-bottom: 1rem;
+
+    @include lg {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+}

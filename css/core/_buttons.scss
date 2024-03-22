@@ -1,0 +1,81 @@
+.cyberBtn {
+    color: white;
+    text-decoration: none;
+    font-size: 24;
+    font-weight: $font-weight-semibold;
+    padding: 0.8rem 2rem;
+    margin: 0;
+    height: 54px;
+    width: auto;
+
+    // Background
+    background: rgb(22,24,39);
+    background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+
+    // Border
+    border: 3px solid $pinkPunk;
+    border-radius: 8px;
+
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        border: 3px solid white;
+        background: $BGDark;
+        color: white;
+    }
+}
+
+.socialBtn {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.25s ease-in-out;
+
+    // @include md {
+   
+    // }
+  
+    // @include lg {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center; 
+    //     transition: all 0.25s ease-in-out;
+    // }
+  
+    // @include xl {
+     
+    // }
+
+ 
+ 
+
+    .socialImg {
+        display: block;
+        margin-left: 1rem;
+        margin-right: auto;
+        width: 60px;  
+        
+        // @include md {
+   
+        // }
+      
+        // @include lg {
+         
+        // }
+      
+        // @include xl {
+         
+        // }
+    }
+}
+
+.socialBtnHover {
+    &:hover {
+ 
+        background: $BGDark;
+        color: white;
+    }
+
+}

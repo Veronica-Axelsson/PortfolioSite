@@ -1,0 +1,172 @@
+// Desktop
+.hero1 {
+  display: none;
+
+  @include md {
+   
+  }
+
+  @include lg {
+   
+  }
+
+  @include xl {
+    display: contents;
+  }
+
+    .herocontainer {
+        position: relative;
+      }
+
+      img {
+        background-size: cover;
+      }
+      
+      .bottomleft {
+        position: absolute;
+        bottom: 3rem;
+        // left: 3rem;
+        font-size: 18px;
+
+        padding: 2.5rem;
+
+        // background: rgb(22,24,39);
+        // background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+    
+        // border: 3px solid $pinkPunk;
+        // border-radius: 8px;
+
+        .hello {
+            color: white;
+            padding-top: 2rem;
+            font-size: 32px;
+        }
+
+        .textAnimation {
+            color: $pinkPunk;
+            font-size: 48px;
+            font-weight: $font-weight-bold;
+            padding-right: 4rem;
+        }
+
+        p {
+            color: white;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+            font-weight: $font-weight-regular;
+        }
+
+        .heroButtons {
+            display: flex;
+            justify-content: space-between;
+            // padding-top: 3rem;
+        }
+      }
+      
+      img { 
+        width: 100%;
+        height: auto;
+        opacity: 1;
+      }
+}
+
+// Smaller screens
+.hero2 {
+
+  @include md {
+   
+  }
+
+  @include lg {
+   
+  }
+
+  @include xl {
+    display: none;
+  }
+
+    // .herocontainer {
+    
+    //   }
+
+      img {
+        max-width: 100%;
+
+      
+      }
+      
+      .bottomleft {
+        // position: absolute;
+        bottom: 3rem;
+        // left: 3rem;
+        font-size: 18px;
+
+        padding: 2.5rem;
+        margin-top: 1rem;
+
+        // background: rgb(22,24,39);
+        // background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+    
+        border: 3px solid $pinkPunk;
+        border-radius: 8px;
+
+        .hello {
+            color: white;
+            padding-top: 2rem;
+            font-size: 18px;
+
+            @include md {
+   
+            }
+          
+            @include lg {
+             
+            }
+          
+            @include xl {
+
+            }
+        }
+
+        .textAnimation {
+            color: $pinkPunk;
+            font-size: 20px;
+            font-weight: $font-weight-bold;
+            padding-right: 4rem;
+
+            @include md {
+   
+            }
+          
+            @include lg {
+             
+            }
+          
+            @include xl {
+              
+            }
+        }
+
+        p {
+            color: white;
+            padding-top: 0.5rem;
+            font-weight: $font-weight-regular;
+            font-size: 16px;
+        }
+
+        .heroButtons {
+            display: block;
+            padding-top: 3rem;
+
+            .socialBtn {
+              display: flex;
+            }
+        }
+      }
+      
+      // img { 
+      //   width: 100%;
+      //   height: auto;
+      //   opacity: 1;
+      // }
+}
