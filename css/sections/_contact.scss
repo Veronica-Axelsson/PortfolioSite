@@ -1,4 +1,25 @@
 .contact {
     color: white;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    background: rgb(22,24,39);
+    background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+    
+
+    .container {
+        max-width: 50%;
+        padding: 1rem 3rem 3rem 3rem;
+        
+
+        .moveBtn {
+            text-align: center;
+
+            a {
+                margin-top: 2rem;
+                font-size: 18px;
+             
+            }
+        }
+     
+    }
 }

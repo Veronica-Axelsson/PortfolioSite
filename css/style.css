@@ -181,6 +181,7 @@ header .topbar .container {
 }
 header .topmenu {
   background: rgb(134, 5, 143);
+  background: linear-gradient(90deg, rgb(134, 5, 143) 0%, rgb(53, 14, 60) 35%, rgb(22, 24, 39) 100%);
   font-size: 2rem;
 }
 header .topmenu .container {
@@ -686,7 +687,21 @@ header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
 
 .contact {
   color: white;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+}
+.contact .container {
+  max-width: 50%;
+  padding: 1rem 3rem 3rem 3rem;
+}
+.contact .container .moveBtn {
+  text-align: center;
+}
+.contact .container .moveBtn a {
+  margin-top: 2rem;
+  font-size: 18px;
 }
 
 footer {

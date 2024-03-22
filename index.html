@@ -153,7 +153,7 @@
                                 <p>My portfolio with a cyberpunk theme.
                                     More content coming soon.</p>
 
-                                    <a href="https://github.com/Veronica-Axelsson/c-sharp-assignment" target="_blank">
+                                    <a href="https://github.com/Veronica-Axelsson/PortfolioSite" target="_blank">
                                         <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
                                
                             </figcaption>
@@ -394,22 +394,27 @@
 
         <!-- Contact -->
         <section id="contact" class="contact  borderTop">
-            <div class="container">
+            <div class="container ">
                 <h2 class="h2title">Contact Us</h2>
                 <form action="send_email.php" method="post">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
+                        <label for="name" class="form-label">Your Name *</label>
                         <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Your Email</label>
+                        <label for="email" class="form-label">Your Email *</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
+                        <label for="message" class="form-label">Message *</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="moveBtn">
+                        <a type="submit" class="cyberBtn">Send message</a>
+                    </div>
+                    
+
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                 </form>
             </div>
 
@@ -418,6 +423,7 @@
 
         <!-- Footer -->
         <footer>
+            <div class="borderTop"></div>
             <!-- newsletter -->
 
             <h4>// Contact info</h4>
