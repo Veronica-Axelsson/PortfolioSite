@@ -23,8 +23,32 @@
                 <p class=" container">// 01001000 01101001 01110010 01100101 00100000 01101101 01100101 00100001 </p>
 
             </div>
+
+                <!-- Mobile menu -->
+                <nav class="topmenuMobile">         
+                    <div class="container">
+                        <h1 class="" id="home">Codefix</h1>
+
+                        <ul>
+                            <div class="moveMenu">
+                                <nav class="mobile-menu">
+                                    <input type="checkbox" id="menu-toggle">
+                                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                                    <ul class="menu-items">
+                                        <li><a href="#home" onclick="hideMenu()">Home</a></li>
+                                        <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
+                                        <li><a href="#about" onclick="hideMenu()">About</a></li>
+                                        <li><a href="#contact" onclick="hideMenu()">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>   
+                        </ul>                 
+                    </div>
+            </nav>
+
             <!-- Desktop menu -->
-            <nav class="topmenu ">
+            <nav class="topmenuDesktop ">
                 <div class="container">
                     <h1 id="home">Codefix</h1>
                     <ul>
@@ -41,28 +65,7 @@
                 </div>     
             </nav>
 
-            <!-- Mobile menu -->
-            <nav class="topmenu2">         
-                    <div class="container">
-                        <h1 class="" id="home">Codefix</h1>
-
-                        <ul>
-                          <div class="moveMenu">
-                            <nav class="mobile-menu">
-                                <input type="checkbox" id="menu-toggle">
-                                <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-                                <ul class="menu-items">
-                                    <li><a href="#home" onclick="hideMenu()">Home</a></li>
-                                    <li><a href="#gallery" onclick="hideMenu()">Gallery</a></li>
-                                    <li><a href="#about" onclick="hideMenu()">About</a></li>
-                                    <li><a href="#contact" onclick="hideMenu()">contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>   
-                        </ul>                 
-                    </div>
-            </nav>
+        
 
 
             <!-- Back to top of site -->
@@ -81,8 +84,33 @@
 
         </header>
         
-        <!-- Hero -->
-        <section class="hero1">
+          <!-- Hero Mobile -->
+        <section class="heroMobile ">
+            <div class="herocontainer">
+                <img src="/images/Hero_Cyberpunk2.jpg" alt="" >
+                <div class="container">
+                    <div class="bottomleft bgBoxes">
+                        <div class="text">
+                            <h2 class="hello">Hello!</h2>
+                            <h2 class="textAnimation">I am a Web developer |</h2>
+                            <p>I design and code things for the web</p>
+                        </div>
+                    
+    
+                        <div class="heroButtons">
+                            <a class="cyberBtn" href="#contact">Contact me!</a>
+                            <div class="socialBtn">
+                                <a class="socialImg socialBtnHover" href="https://github.com/Veronica-Axelsson" target="_blank"><img src="./images/Socials/ButtonSocialGitHub.svg" alt=""></a>
+                                <a class="socialImg socialBtnHover" href="https://www.linkedin.com/in/vea-art/" target="_blank"><img src="./images/Socials/ButtonSocialLinkedin.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+          <!-- Hero Desktop -->
+          <section class="heroDesktop">
             <div class="herocontainer">
                 <img src="/images/Hero_Cyberpunk2.jpg" alt="">
                 <div class="container">
@@ -102,114 +130,22 @@
                 </div> 
             </div>
         </section>
-
-        <section class="hero2 ">
-            <div class="herocontainer">
-                <img src="/images/Hero_Cyberpunk2.jpg" alt="" >
-                <div class="container">
-                    <div class="bottomleft bgBoxes">
-                        <h2 class="hello">Hello!</h2>
-                        <h2 class="textAnimation">I am a Web developer |</h2>
-                        <p>I design and code things for the web</p>
-    
-                        <div class="heroButtons">
-                            <a class="cyberBtn" href="#contact">Contact me!</a>
-                            <div class="socialBtn">
-                                <a class="socialImg socialBtnHover" href="https://github.com/Veronica-Axelsson" target="_blank"><img src="./images/Socials/ButtonSocialGitHub.svg" alt=""></a>
-                                <a class="socialImg socialBtnHover" href="https://www.linkedin.com/in/vea-art/" target="_blank"><img src="./images/Socials/ButtonSocialLinkedin.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </section>
-
         <!-- Gallery. Design, Art & Illustration, 3D & CAD, Photos -->
         <section id="gallery" class="gallery container">
             <h2 class="h2title">// Gallery</h2>
             <!-- Gallery menu -->
             <ul class="nav navtabDesign justify-content-center" role="tablist">
-                <li class="nav-item " role="presentation">
-                  <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Code</a>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="false">Design</a>
                 </li>
                 <p>|</p>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Design</a>
+                <li class="nav-item " role="presentation">
+                  <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="true">Code</a>
                 </li>
-             
             </ul>
 
             <div class="tab-content pt-5" id="tab-content">
-                <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
-                    <!-- Code gallery -->
-                    <div class="galleryCard">
-                        <figure class="image-block">
-                            <h1>Cyberpunk portfolio</h1>
-                            <img src="images/CodeProjects/portfolioCyberpunk.png" alt="" />
-                            <figcaption>
-                                <h3>
-                                    Cyberpunk portfolio
-                                </h3>
-                                <p>My portfolio with a cyberpunk theme.
-                                    More content coming soon.</p>
-
-                                    <a href="https://github.com/Veronica-Axelsson/PortfolioSite" target="_blank">
-                                        <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
-                               
-                            </figcaption>
-                        </figure>
-
-                        <figure class="image-block">
-                            <h1>Kenkata</h1>
-                            <img src="images/CodeProjects/Kenkata.png" alt="" />
-                            <figcaption>
-                                <h3>
-                                    Kenkata
-                                </h3>
-                                <p>HTML and CSS school assignment.
-                                    Lorem
-                                </p>
-
-                                    <a href="https://github.com/Veronica-Axelsson/assignment-html-css" target="_blank">
-                                        <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
-                               
-                            </figcaption>
-                        </figure>
-
-                        <figure class="image-block">
-                            <h1>C# adress book</h1>
-                            <img src="images/CodeProjects/C-Sharp.png" alt="" />
-                            <figcaption>
-                                <h3>
-                                    C# adress book.
-                                </h3>
-                                <p>Adress book made with C# for a school assignment.</p>
-
-                                <a href="https://github.com/Veronica-Axelsson/c-sharp-assignment" target="_blank">
-                                    <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
-                             
-                            </figcaption>
-                        </figure>
-
-    
-                        <!-- <figure class="image-block">
-                            <h1>Fixxo</h1>
-                            <img src="images/FIXXO.png" alt="" />
-                            <figcaption>
-                                <h3>
-                                    FIXXO
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit.</p>
-                                <button>
-                                    More Info
-                                </button>
-                            </figcaption>
-                        </figure> -->
-                    </div>
-                </div>
-
-                <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                <div class="tab-pane active" id="simple-tabpanel-0" role="tabpane0" aria-labelledby="simple-tab-0">
                     <!-- Design gallery -->
                     <div class="galleryCard">
                         <figure class="image-block">
@@ -304,6 +240,77 @@
                         </figure> -->
                     </div>
                 </div>
+
+                <div class="tab-pane " id="simple-tabpanel-1" role="tabpanel1" aria-labelledby="simple-tab-1">
+                    <!-- Code gallery -->
+                    <div class="galleryCard">
+                        <figure class="image-block">
+                            <h1>Cyberpunk portfolio</h1>
+                            <img src="images/CodeProjects/portfolioCyberpunk.png" alt="" />
+                            <figcaption>
+                                <h3>
+                                    Cyberpunk portfolio
+                                </h3>
+                                <p>My portfolio with a cyberpunk theme.
+                                    More content coming soon.</p>
+
+                                    <a href="https://github.com/Veronica-Axelsson/PortfolioSite" target="_blank">
+                                        <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
+                               
+                            </figcaption>
+                        </figure>
+
+                        <figure class="image-block">
+                            <h1>Kenkata</h1>
+                            <img src="images/CodeProjects/Kenkata.png" alt="" />
+                            <figcaption>
+                                <h3>
+                                    Kenkata
+                                </h3>
+                                <p>HTML and CSS school assignment.
+                                    Lorem
+                                </p>
+
+                                    <a href="https://github.com/Veronica-Axelsson/assignment-html-css" target="_blank">
+                                        <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
+                               
+                            </figcaption>
+                        </figure>
+
+                        <figure class="image-block">
+                            <h1>C# adress book</h1>
+                            <img src="images/CodeProjects/C-Sharp.png" alt="" />
+                            <figcaption>
+                                <h3>
+                                    C# adress book.
+                                </h3>
+                                <p>Adress book made with C# for a school assignment.</p>
+
+                                <a href="https://github.com/Veronica-Axelsson/c-sharp-assignment" target="_blank">
+                                    <button>To GitHub <i class="fa-brands fa-github"></i></button></a>
+                             
+                            </figcaption>
+                        </figure>
+
+    
+                        <!-- <figure class="image-block">
+                            <h1>Fixxo</h1>
+                            <img src="images/FIXXO.png" alt="" />
+                            <figcaption>
+                                <h3>
+                                    FIXXO
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.</p>
+                                <button>
+                                    More Info
+                                </button>
+                            </figcaption>
+                        </figure> -->
+                    </div>
+                </div>
+
+         
             </div>
 
 
@@ -396,7 +403,7 @@
         <section id="contact" class="contact  borderTop">
             <div class="container ">
                 <h2 class="h2title">Contact Us</h2>
-                <form action="send_email.php" method="post">
+                <form class="formwidth" action="send_email.php" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name *</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -424,12 +431,26 @@
         <!-- Footer -->
         <footer>
             <div class="borderTop"></div>
-            <!-- newsletter -->
+            <div class="container">
+                <div class="contact">
+                    <div class="heroButtons">
+                  
+                        <div class="socialBtn">
+                            <a class="socialImg socialBtnHover" href="https://github.com/Veronica-Axelsson" target="_blank"><img src="./images/Socials/ButtonSocialGitHub.svg" alt=""></a>
+                            <a class="socialImg socialBtnHover" href="https://www.linkedin.com/in/vea-art/" target="_blank"><img src="./images/Socials/ButtonSocialLinkedin.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="contactinfo">
+                        <h4>// Contact info</h4>
+                        <p>Veronica Axelsson</p>
+                        <p>070 - 486 38 52</p>
+                        <p>veronica.axelsson@vea-art.com</p>
+                    </div>
+                </div>
+            </div>
+      
 
-            <h4>// Contact info</h4>
-            <p>Veronica Axelsson</p>
-            <p>070 - 486 38 52</p>
-            <p>veronica.axelsson@vea-art.com</p>
+           
         </footer>
     </div>
     

@@ -7,9 +7,15 @@
     
 
     .container {
-        max-width: 50%;
+        max-width: 90%;
         padding: 1rem 3rem 3rem 3rem;
         
+        .formwidth {
+            max-width: 600px;
+            padding-top: 5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .moveBtn {
             text-align: center;

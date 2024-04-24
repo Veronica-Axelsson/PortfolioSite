@@ -25,14 +25,11 @@
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
   align-items: center;
   transition: all 0.25s ease-in-out;
 }
 .socialBtn .socialImg {
   display: block;
-  margin-left: 1rem;
-  margin-right: auto;
   width: 60px;
 }
 
@@ -124,14 +121,11 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
   align-items: center;
   transition: all 0.25s ease-in-out;
 }
 .socialBtn .socialImg {
   display: block;
-  margin-left: 1rem;
-  margin-right: auto;
   width: 60px;
 }
 
@@ -178,56 +172,14 @@ header .topbar .container {
   color: white;
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
-}
-header .topmenu {
-  background: rgb(134, 5, 143);
-  background: linear-gradient(90deg, rgb(134, 5, 143) 0%, rgb(53, 14, 60) 35%, rgb(22, 24, 39) 100%);
-  font-size: 2rem;
-}
-header .topmenu .container {
-  display: none;
-  justify-content: space-between;
-  text-decoration: none;
-  align-items: center;
-}
-@media (min-width: 992px) {
-  header .topmenu .container {
-    display: flex;
-  }
-}
-header .topmenu .container h1 {
-  color: white;
-}
-header .topmenu .container ul {
-  display: none;
-}
-header .topmenu .container ul .line {
-  color: white;
-}
-header .topmenu .container ul a {
-  text-decoration: none;
-  color: white;
-  padding: 0 2rem;
-}
-@media (min-width: 992px) {
-  header .topmenu .container ul {
-    display: flex;
-  }
-}
-
-header .topbar .container {
-  background-color: #161827;
-  color: white;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
   max-width: 90%;
 }
-header .topmenu2 {
+header .topmenuMobile {
   background: rgb(134, 5, 143);
   background: linear-gradient(90deg, rgb(134, 5, 143) 0%, rgb(53, 14, 60) 35%, rgb(22, 24, 39) 100%);
   font-size: 2rem;
 }
-header .topmenu2 .container {
+header .topmenuMobile .container {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -235,39 +187,47 @@ header .topmenu2 .container {
   max-width: 90%;
 }
 @media (min-width: 992px) {
-  header .topmenu2 .container {
+  header .topmenuMobile .container {
     display: none;
   }
 }
-header .topmenu2 .container h1 {
+header .topmenuMobile .container h1 {
   color: white;
+  padding: 5px 0;
+  margin: 0;
+  margin-left: -1rem;
 }
-header .topmenu2 .container ul {
+header .topmenuMobile .container ul {
   display: flex;
   /* Show menu items when checkbox is checked */
 }
-header .topmenu2 .container ul .moveMenu {
+header .topmenuMobile .container ul .moveMenu {
   display: flex;
   justify-content: end;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu {
+header .topmenuMobile .container ul .moveMenu .mobile-menu {
   color: #fff;
   max-width: 55%;
   position: fixed;
   z-index: 1000;
-  top: 30px; /* Make the menu stick to the top */
+  top: 21px; /* Make the menu stick to the top */
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu input {
+@media (min-width: 768px) {
+  header .topmenuMobile .container ul .moveMenu .mobile-menu {
+    top: 37px;
+  }
+}
+header .topmenuMobile .container ul .moveMenu .mobile-menu input {
   display: none;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu label {
+header .topmenuMobile .container ul .moveMenu .mobile-menu label {
   display: flex;
   justify-content: end;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu label .menu-icon {
+header .topmenuMobile .container ul .moveMenu .mobile-menu label .menu-icon {
   cursor: pointer;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items {
+header .topmenuMobile .container ul .moveMenu .mobile-menu .menu-items {
   /* Hide the menu items by default */
   display: none;
   list-style-type: none;
@@ -277,19 +237,67 @@ header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items {
   border: 3px solid #FA38E4;
   border-radius: 8px;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li {
+header .topmenuMobile .container ul .moveMenu .mobile-menu .menu-items li {
   display: block;
   padding: 10px 0;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li a {
+header .topmenuMobile .container ul .moveMenu .mobile-menu .menu-items li a {
   color: #fff;
   text-decoration: none;
 }
-header .topmenu2 .container ul .moveMenu .mobile-menu .menu-items li a:hover {
+header .topmenuMobile .container ul .moveMenu .mobile-menu .menu-items li a:hover {
   text-decoration: underline;
 }
-header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
+header .topmenuMobile .container ul #menu-toggle:checked + .menu-icon + .menu-items {
   display: block;
+}
+
+header .topbar .container {
+  background-color: #161827;
+  color: white;
+  font-size: 8px;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+@media (min-width: 768px) {
+  header .topbar .container {
+    font-size: 16px;
+  }
+}
+header .topmenuDesktop {
+  background: rgb(134, 5, 143);
+  background: linear-gradient(90deg, rgb(134, 5, 143) 0%, rgb(53, 14, 60) 35%, rgb(22, 24, 39) 100%);
+  font-size: 2rem;
+}
+header .topmenuDesktop .container {
+  display: none;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  header .topmenuDesktop .container {
+    display: flex;
+  }
+}
+header .topmenuDesktop .container h1 {
+  color: white;
+}
+header .topmenuDesktop .container ul {
+  display: none;
+}
+header .topmenuDesktop .container ul .line {
+  color: white;
+}
+header .topmenuDesktop .container ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2rem;
+}
+@media (min-width: 992px) {
+  header .topmenuDesktop .container ul {
+    display: flex;
+  }
 }
 
 .toTheTop {
@@ -322,62 +330,18 @@ header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
   cursor: pointer;
 }
 
-.hero1 {
-  display: none;
+.heroMobile {
+  margin-top: -16px;
 }
 @media (min-width: 1200px) {
-  .hero1 {
-    display: contents;
-  }
-}
-.hero1 .herocontainer {
-  position: relative;
-}
-.hero1 img {
-  background-size: cover;
-}
-.hero1 .bottomleft {
-  position: absolute;
-  bottom: 3rem;
-  font-size: 18px;
-  padding: 2.5rem;
-}
-.hero1 .bottomleft .hello {
-  color: white;
-  padding-top: 2rem;
-  font-size: 32px;
-}
-.hero1 .bottomleft .textAnimation {
-  color: #FA38E4;
-  font-size: 48px;
-  font-weight: 700;
-  padding-right: 4rem;
-}
-.hero1 .bottomleft p {
-  color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  font-weight: 400;
-}
-.hero1 .bottomleft .heroButtons {
-  display: flex;
-  justify-content: space-between;
-}
-.hero1 img {
-  width: 100%;
-  height: auto;
-  opacity: 1;
-}
-
-@media (min-width: 1200px) {
-  .hero2 {
+  .heroMobile {
     display: none;
   }
 }
-.hero2 img {
+.heroMobile .herocontainer img {
   max-width: 100%;
 }
-.hero2 .bottomleft {
+.heroMobile .herocontainer .container .bottomleft {
   bottom: 3rem;
   font-size: 18px;
   padding: 2.5rem;
@@ -385,29 +349,76 @@ header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
   border: 3px solid #FA38E4;
   border-radius: 8px;
 }
-.hero2 .bottomleft .hello {
+.heroMobile .herocontainer .container .bottomleft .text .hello {
   color: white;
-  padding-top: 2rem;
   font-size: 18px;
 }
-.hero2 .bottomleft .textAnimation {
+.heroMobile .herocontainer .container .bottomleft .text .textAnimation {
   color: #FA38E4;
   font-size: 20px;
   font-weight: 700;
   padding-right: 4rem;
 }
-.hero2 .bottomleft p {
+.heroMobile .herocontainer .container .bottomleft .text p {
   color: white;
   padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
   font-weight: 400;
   font-size: 16px;
 }
-.hero2 .bottomleft .heroButtons {
-  display: block;
-  padding-top: 3rem;
+.heroMobile .herocontainer .container .bottomleft .heroButtons .socialBtn .socialImg {
+  margin-top: 3rem;
+  margin-right: 1rem;
 }
-.hero2 .bottomleft .heroButtons .socialBtn {
+
+.heroDesktop {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .heroDesktop {
+    display: contents;
+  }
+}
+.heroDesktop .herocontainer {
+  position: relative;
+}
+.heroDesktop img {
+  background-size: cover;
+}
+.heroDesktop .bottomleft {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 18px;
+  padding: 2.5rem;
+}
+.heroDesktop .bottomleft .hello {
+  color: white;
+  padding-top: 2rem;
+  font-size: 32px;
+}
+.heroDesktop .bottomleft .textAnimation {
+  color: #FA38E4;
+  font-size: 48px;
+  font-weight: 700;
+  padding-right: 4rem;
+}
+.heroDesktop .bottomleft p {
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.heroDesktop .bottomleft .heroButtons {
   display: flex;
+  justify-content: space-between;
+}
+.heroDesktop .bottomleft .heroButtons .socialImg {
+  margin-left: 2rem;
+}
+.heroDesktop img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
 }
 
 .center {
@@ -693,8 +704,14 @@ header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
   background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
 }
 .contact .container {
-  max-width: 50%;
+  max-width: 90%;
   padding: 1rem 3rem 3rem 3rem;
+}
+.contact .container .formwidth {
+  max-width: 600px;
+  padding-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact .container .moveBtn {
   text-align: center;
@@ -705,5 +722,45 @@ header .topmenu2 .container ul #menu-toggle:checked + .menu-icon + .menu-items {
 }
 
 footer {
+  margin-top: 5rem;
+  background: rgb(22, 24, 39);
+  background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
   color: white;
+  font-size: 1rem;
+}
+footer .contact {
+  display: block;
+  color: white;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+}
+@media (min-width: 768px) {
+  footer .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer .contact .heroButtons {
+  margin-bottom: 2rem;
+  padding-left: 20px;
+}
+footer .contact .contactinfo {
+  text-align: end;
+  padding-right: 60px;
+}
+@media (min-width: 768px) {
+  footer .contact .contactinfo {
+    padding-right: 30px;
+  }
+}
+footer .contact .container {
+  max-width: 50%;
+  padding: 1rem 3rem 3rem 3rem;
+}
+footer .contact .container .moveBtn {
+  text-align: center;
+}
+footer .contact .container .moveBtn a {
+  margin-top: 2rem;
+  font-size: 18px;
 }
