@@ -96,6 +96,19 @@ body {
   }
 }
 
+.h5title {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .h5title {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .cyberBtn {
   color: white;
   text-decoration: none;

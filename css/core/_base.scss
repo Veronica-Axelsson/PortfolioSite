@@ -64,3 +64,18 @@ body {
     }
 
 }
+
+.h5title {
+    font-size: 22px;
+    font-weight: $font-weight-bold;
+    color: white;
+    text-align: center;
+    // padding-top: 3rem;
+    // padding-bottom: 1rem;
+
+    @include lg {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+}
