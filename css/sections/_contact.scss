@@ -1,24 +1,25 @@
 .contact {
     color: white;
     margin-bottom: 3rem;
-    padding-top: 3rem;
+    padding-top: 0;
     background: rgb(22,24,39);
     background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
     
 
     .container {
         max-width: 90%;
-        padding: 1rem 3rem 3rem 3rem;
+        padding: 1rem 3rem 0 3rem;
         
         .formwidth {
             max-width: 600px;
-            padding-top: 5rem;
+            padding-top: 3rem;
             margin-left: auto;
             margin-right: auto;
         }
 
         .moveBtn {
             text-align: center;
+            margin-top: 3rem;
 
             a {
                 margin-top: 2rem;
