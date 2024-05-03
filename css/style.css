@@ -50,6 +50,7 @@ body {
 .bgBoxes {
   background: rgb(22, 24, 39);
   background: linear-gradient(0deg, rgb(22, 24, 39) 0%, rgb(70, 9, 72) 100%);
+  width: 650px;
 }
 @media (min-width: 992px) {
   .bgBoxes {
@@ -180,6 +181,37 @@ body {
   padding-top: 60px;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .console-container {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .console-container {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .console-container {
+    font-size: 38px;
+  }
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+
 header .topbar .container {
   background-color: #161827;
   color: white;
@@ -203,6 +235,9 @@ header .topmenuMobile .container {
   header .topmenuMobile .container {
     display: none;
   }
+}
+header .topmenuMobile .container a {
+  text-decoration: none;
 }
 header .topmenuMobile .container h1 {
   color: white;
@@ -293,8 +328,12 @@ header .topmenuDesktop .container {
     display: flex;
   }
 }
+header .topmenuDesktop .container a {
+  text-decoration: none;
+}
 header .topmenuDesktop .container h1 {
   color: white;
+  text-decoration: none;
 }
 header .topmenuDesktop .container ul {
   display: none;
@@ -351,6 +390,10 @@ header .topmenuDesktop .container ul a {
     display: none;
   }
 }
+.heroMobile .herocontainer {
+  margin-left: auto;
+  margin-right: auto;
+}
 .heroMobile .herocontainer img {
   max-width: 100%;
 }
@@ -361,6 +404,14 @@ header .topmenuDesktop .container ul a {
   margin-top: 1rem;
   border: 3px solid #FA38E4;
   border-radius: 8px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .heroMobile .herocontainer .container .bottomleft {
+    max-width: 80%;
+  }
 }
 .heroMobile .herocontainer .container .bottomleft .text .hello {
   color: white;
@@ -401,7 +452,7 @@ header .topmenuDesktop .container ul a {
 .heroDesktop .bottomleft {
   position: absolute;
   bottom: 3rem;
-  font-size: 18px;
+  font-size: 1.2rem;
   padding: 2.5rem;
 }
 .heroDesktop .bottomleft .hello {
@@ -434,6 +485,33 @@ header .topmenuDesktop .container ul a {
   opacity: 1;
 }
 
+.aitext {
+  display: none;
+  text-align: right;
+  color: white;
+  background-color: black;
+  -webkit-text-decoration: underline #FA38E4 3px;
+          text-decoration: underline #FA38E4 3px;
+  font-size: 1.3rem;
+  padding-right: 12rem;
+  margin-top: -3rem;
+  border-bottom: 3px solid #FA38E4;
+}
+@media (min-width: 1200px) {
+  .aitext {
+    display: block;
+    text-align: right;
+    color: white;
+    background-color: black;
+    -webkit-text-decoration: underline #FA38E4 3px;
+            text-decoration: underline #FA38E4 3px;
+    font-size: 1.3rem;
+    padding-right: 12rem;
+    margin-top: -3rem;
+    border-bottom: 3px solid #FA38E4;
+  }
+}
+
 .center {
   text-align: center;
 }
@@ -458,7 +536,7 @@ header .topmenuDesktop .container ul a {
   color: white;
 }
 .navtabDesign li a:hover {
-  color: #FF7373;
+  color: #FA38E4;
   text-decoration: underline;
 }
 
@@ -584,6 +662,10 @@ header .topmenuDesktop .container ul a {
 .gallery .galleryCard figure figcaption p {
   font-size: 14px;
   line-height: 1.75;
+  text-align: left;
+}
+.gallery .galleryCard figure figcaption a {
+  text-decoration: none;
 }
 .gallery .galleryCard figure figcaption button {
   position: relative;
@@ -592,7 +674,7 @@ header .topmenuDesktop .container ul a {
   justify-content: center;
   margin: 10px 0 0;
   padding: 10px 30px;
-  background-color: #FF7373;
+  background-color: #FA38E4;
   border: none;
   border-radius: 5px;
   color: white;

@@ -16,6 +16,7 @@ body {
 .bgBoxes {
     background: rgb(22,24,39);
     background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
+    width: 650px;
 
     @include lg {
         border: 3px solid $pinkPunk;

@@ -22,11 +22,14 @@ header {
             justify-content: space-between;
             text-decoration: none;
             align-items: center;
-            max-width: 90%;
-           
+            max-width: 90%;        
 
             @include lg {
                 display: none;      
+            }
+
+            a{
+                text-decoration: none;
             }
 
             h1 {
@@ -165,8 +168,13 @@ header {
                 display: flex;
             }
 
+            a{
+                text-decoration: none;
+            }
+
             h1 {
                 color: white;     
+                text-decoration: none;
             }
     
             ul {

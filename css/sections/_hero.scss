@@ -2,12 +2,14 @@
 .heroMobile {
   margin-top: -16px;
 
-
   @include xl {
     display: none;
   }
 
   .herocontainer {
+    margin-left: auto;
+    margin-right: auto;
+
   
     img {
       max-width: 100%;
@@ -16,19 +18,22 @@
     .container {
     
       .bottomleft {
-        // position: absolute;
         bottom: 3rem;
-        // left: 3rem;
         font-size: 18px;
-
         padding: 2.5rem;
         margin-top: 1rem;
-
         // background: rgb(22,24,39);
         // background: linear-gradient(0deg, rgba(22,24,39,1) 0%, rgba(70,9,72,1) 100%);
-    
         border: 3px solid $pinkPunk;
         border-radius: 8px;
+
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @include md {
+          max-width: 80%;
+        }
 
         .text {
 
@@ -82,8 +87,6 @@
           // display: block;
           // padding-top: 1rem;
 
-      
-
           .socialBtn {
             // display: flex;
 
@@ -91,27 +94,13 @@
               // margin: 0 1rem;
               // padding: 0;
               margin-top: 3rem;
-              margin-right: 1rem;
-              
-            }
-
-          
+              margin-right: 1rem;             
+            }        
           }
         }
       }
     }
-    
-
-
   }
-
-
-      
-      // img { 
-      //   width: 100%;
-      //   height: auto;
-      //   opacity: 1;
-      // }
 }
 
 // Desktop
@@ -142,7 +131,7 @@
         position: absolute;
         bottom: 3rem;
         // left: 3rem;
-        font-size: 18px;
+        font-size: 1.2rem;
 
         padding: 2.5rem;
 
@@ -193,3 +182,33 @@
       }
 }
 
+.aitext{
+  display: none;
+  text-align: right;
+  color: white;
+  background-color: black;
+  text-decoration: underline $pinkPunk 3px;
+  font-size: 1.3rem;
+  padding-right: 12rem;
+  margin-top: -3rem;
+  border-bottom: 3px solid $pinkPunk;
+
+  @include md {
+   
+  }
+
+  @include lg {
+  }
+
+  @include xl {
+    display: block;
+    text-align: right;
+    color: white;
+    background-color: black;
+    text-decoration: underline $pinkPunk 3px;
+    font-size: 1.3rem;
+    padding-right: 12rem;
+    margin-top: -3rem;
+    border-bottom: 3px solid $pinkPunk;
+  }
+}
